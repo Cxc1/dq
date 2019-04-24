@@ -1,0 +1,79 @@
+.formHead {
+  color: #8b939f;
+  font-size: 1.2rem;
+  margin: .5rem 1rem;
+  text-align: left;
+}
+
+.record_products {
+  background-color: #1e2730;
+  height: 7.4rem;
+  margin-bottom: 0.4rem;
+  color: #b9c7d5;
+  padding: 1rem;
+  box-sizing: border-box;
+  .icon {
+    height: 100%;
+    width: 3rem;
+    position: relative;
+    float: left;
+    span {
+      display: inline-block;
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      text-align: center;
+      line-height: 2.8rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      box-sizing: border-box;
+    }
+  }
+  .record_products_center {
+    width:calc(~'100% - 4rem');
+    height: 100%;
+    float: right;
+    display: flex;
+    >div{
+      flex: 1;
+      text-align: left;
+      line-height: 1.5rem;
+      height:100%;
+      max-width: 50%;
+      &:nth-child(1){
+        max-width: 55%;
+      }
+      >p{
+        overflow: hidden;
+        max-height: 100%;
+        height: 1.5rem;
+        white-space: nowrap;
+
+        &:nth-child(1){
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+          height: 1.8rem;
+          overflow-x: scroll;
+          margin-right: .5rem;
+        }
+        &:nth-child(2){
+          border-bottom: 1px solid #666;
+          height: 2rem;
+          line-height: 2rem;
+        }
+        &:nth-child(3){
+
+          text-overflow: ellipsis;
+        }
+      }
+      &.record_products_center_right{
+        text-align: right;
+      }
+    }
+  }
+}

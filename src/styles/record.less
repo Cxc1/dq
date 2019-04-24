@@ -1,0 +1,51 @@
+
+  .record_products {
+    background-color: #1e2730;
+    height: 9rem;
+    margin-bottom: 0.4rem;
+    padding: 1rem;
+    .icon {
+      height: 100%;
+      width: 3rem;
+      position: relative;
+      float: left;
+      span {
+        display: inline-block;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        text-align: center;
+        line-height: 2.8rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0.5rem;
+        margin: auto;
+        box-sizing: border-box;
+      }
+    }
+    .record_products_center {
+      width:calc(~'100% - 4rem');
+      height: 100%;
+      float: right;
+      p {
+        height: 25%;
+        color: #8b939f;
+        line-height: 2.2rem;
+        font-size: 1rem;
+        span {
+          display: inline-block;
+          max-width: 50%;
+          overflow-x: hidden;
+          max-height: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          &:nth-child(2) {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
